@@ -17,19 +17,32 @@
     <link rel="stylesheet" href="style.css" />
 
     <link rel="icon" href="../../assets/img/logo.jpg" />
-    <title>PuskesmasKu - Login</title>
+    <title>PuskesmasKu - Registrasi</title>
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="main__logo">
-          <img src="../../assets/img/icon.png" alt="" />
-          <h1>Welcome</h1>
-          <p>Masuk untuk mengakses akun anda</p>
+        <div class="main__title">
+          <h1>Resgistrasi</h1>
+          <p>Mendaftar untuk membuat akun</p>
         </div>
 
         <div class="main__form">
-          <form id="loginForm">
+          <form id="registform">
+            <div class="input__group">
+              <label for="name">Nama</label>
+              <div class="form__input">
+                <i class="bx bx-user"></i>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukan nama lengkap anda"
+                  required
+                />
+              </div>
+            </div>
+
             <div class="input__group">
               <label for="email">Email</label>
               <div class="form__input">
@@ -39,6 +52,20 @@
                   id="email"
                   name="email"
                   placeholder="Masukan email anda"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input__group">
+              <label for="nomer">No. Handphone</label>
+              <div class="form__input">
+                <i class="bx bx-phone"></i>
+                <input
+                  type="number"
+                  id="nomer"
+                  name="nomer"
+                  placeholder="0812345678"
                   required
                 />
               </div>
@@ -55,17 +82,32 @@
                   placeholder="Masukan password anda"
                   required
                 />
-                <i class="las la-eye-slash"></i>
-                <i class="las la-eye"></i>
               </div>
             </div>
 
-            <div class="forgot-password">
-              <a href="../forget/index.html">Lupa Password?</a>
+            <div class="input__group">
+              <label for="confirm-password">Konfirmasi Password</label>
+              <div class="form__input">
+                <i class="bx bx-lock-alt"></i>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Masukan konfirmasi password"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="show__password">
+              <a href="#" id="show-password">Tampilkan Password</a>
+              <a href="#" id="hide-password" style="display: none"
+                >Sembunyikan Password</a
+              >
             </div>
 
             <div class="button">
-              <button type="submit" class="login-button">Masuk</button>
+              <button type="submit" class="regist-button">Registrasi</button>
             </div>
           </form>
         </div>
@@ -89,9 +131,7 @@
         </div>
 
         <div class="main__bottom">
-          <p>
-            Tidak mempunyai akun? <a href="../regist/index.html">Buat Akun</a>
-          </p>
+          <p>Sudah mempunyai akun? <a href="../login/index.html">Masuk</a></p>
         </div>
       </div>
     </main>
