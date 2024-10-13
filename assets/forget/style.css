@@ -58,15 +58,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding-bottom: 20px;
 }
 
 .main__logo {
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 250px;
+  margin-bottom: 3rem;
 }
 
 .main__logo img {
@@ -74,16 +75,14 @@ main {
   max-height: 300px;
 }
 
-.main__logo h1 {
-  color: var(--main-color);
-}
-
 .main__logo p {
   font-size: 12px;
-  font-weight: bolder;
+  font-weight: 400;
+  text-align: center;
 }
 
 .main__form {
+  /* border: 1px solid red; */
   width: 100%;
 }
 
@@ -111,23 +110,11 @@ main {
   position: relative;
 }
 
-.form__input .bx,
 .form__input .las {
   font-size: 20px;
 }
 
-.form__input .las {
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
+input[type="email"] {
   border: none;
   width: 100%;
   padding: 10px;
@@ -135,31 +122,14 @@ input[type="text"] {
   outline: none;
 }
 
-.show-password {
-  position: absolute;
-  right: 10px;
-  top: 40px;
-  cursor: pointer;
-}
-
-.forgot-password {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.forgot-password a {
-  text-decoration: none;
-  color: var(--main-color);
-  font-size: 12px;
-}
-
 .button {
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-top: 2rem;
 }
 
-.login-button {
+.forget-button {
   background-color: var(--main-color);
   color: white;
   padding: 10px 30px;
@@ -171,39 +141,10 @@ input[type="text"] {
   text-align: center;
 }
 
-.main__span {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.main__span span {
-  margin: 0 2rem;
-  border: 1px solid #afafaf;
-  width: 100%;
-  border-radius: 50px;
-}
-
-.main__span p {
-  font-size: 13px;
-  font-weight: 400;
-}
-
-.main__social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.main__social img {
-  width: 25px;
-}
-
 .main__bottom {
+  margin-top: 2rem;
   font-size: 13px;
+  text-align: center;
 }
 
 .main__bottom p {

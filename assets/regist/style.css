@@ -62,25 +62,20 @@ main {
   padding-bottom: 20px;
 }
 
-.main__logo {
+.main__title {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 250px;
 }
 
-.main__logo img {
-  width: 100%;
-  max-height: 300px;
-}
-
-.main__logo h1 {
+.main__title h1 {
   color: var(--main-color);
 }
 
-.main__logo p {
-  font-size: 12px;
-  font-weight: bolder;
+.main__title p {
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .main__form {
@@ -93,6 +88,16 @@ main {
 
 .input__group {
   margin-bottom: 10px;
+}
+
+.input__group a {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: end;
+  margin-top: 10px;
+  color: #5271ff;
 }
 
 .input__group label {
@@ -111,23 +116,14 @@ main {
   position: relative;
 }
 
-.form__input .bx,
-.form__input .las {
+.form__input .bx {
   font-size: 20px;
 }
 
-.form__input .las {
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
 input[type="email"],
-input[type="password"],
-input[type="text"] {
+input[type="text"],
+input[type="number"],
+input[type="password"] {
   border: none;
   width: 100%;
   padding: 10px;
@@ -135,22 +131,21 @@ input[type="text"] {
   outline: none;
 }
 
-.show-password {
-  position: absolute;
-  right: 10px;
-  top: 40px;
+.show__password {
+  text-align: end;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.show__password a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 12px;
   cursor: pointer;
 }
 
-.forgot-password {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.forgot-password a {
-  text-decoration: none;
-  color: var(--main-color);
-  font-size: 12px;
+.show__password a:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -159,7 +154,7 @@ input[type="text"] {
   align-items: center;
 }
 
-.login-button {
+.regist-button {
   background-color: var(--main-color);
   color: white;
   padding: 10px 30px;
